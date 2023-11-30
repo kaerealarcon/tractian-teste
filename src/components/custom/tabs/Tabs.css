@@ -1,0 +1,68 @@
+.tab-container{
+	grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr))
+
+}
+
+.button-tab{
+	background: none;
+	border: none;
+	font-family: var(--poppins);
+	cursor: pointer;
+	padding:  0.5rem 2rem;
+	color: var(--light-grey);
+	font-weight: 600;
+}
+
+.button-tab:hover{
+	background: var(--light-blue);
+	color: var(--white-255);
+	border-radius: 1rem 1rem 0 0;
+	transition-duration: 0.5s;
+}
+
+.activated{
+	background: var(--light-blue);
+	color: var(--white-255);
+	border-radius: 1rem 1rem 0 0;
+}
+
+@media only screen and  (max-width: 1285px) {
+	.tab-container{
+		grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr))
+
+	}
+}
+
+@media only screen and  (max-width: 935px) {
+	.tab-container{
+		grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr))
+
+	}
+}
+
+@media only screen and  (max-width: 640px) {
+	.tab-container{
+		grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr))
+	}
+
+	.button-tab{
+		background: none;
+		border: none;
+		font-family: var(--poppins);
+		cursor: pointer;
+		padding:  0.5rem 2rem;
+		color: var(--light-grey);
+		font-weight: 600;
+	}
+
+	.button-tab:hover{
+		background: none;
+		color: var(--light-blue);
+		border-bottom: 0.2rem solid var(--light-blue);
+		transition: none;
+	}
+	.activated{
+		color: var(--light-blue);
+		border-bottom: 0.2rem solid var(--light-blue);
+	}
+}

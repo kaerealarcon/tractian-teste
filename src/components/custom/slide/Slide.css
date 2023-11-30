@@ -1,0 +1,20 @@
+.slide-container{
+	display: flex;
+	gap: 0.5rem;
+	padding-bottom: 1rem;
+}
+
+.button-slide{
+	background: var(--white-blue);
+	border: none;
+	padding: .1rem 3rem;
+	cursor: pointer;
+}
+
+.activated-slide{
+	background: #1DB655;
+	border: none;
+	padding: .1rem 3rem;
+	transition-duration: 0.3s;
+
+}

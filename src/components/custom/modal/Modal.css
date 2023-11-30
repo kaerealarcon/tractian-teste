@@ -1,0 +1,30 @@
+.modal-window {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: var(--maxzindex);
+	overflow-y: scroll;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(63, 63, 63, .66);
+}
+
+.modal-overlay {
+	margin: .5rem;
+	padding: 1rem;
+
+	background-color: var(--white-255);
+	border-radius: var(--small-5);
+}
+
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+	.modal-window {
+		-webkit-backdrop-filter: blur(4px);
+		backdrop-filter: blur(4px);
+		background-color: rgba(127,127,127,0.125);
+	}
+}

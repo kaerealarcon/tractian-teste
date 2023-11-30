@@ -1,0 +1,92 @@
+.cards-container{
+	margin: 0 4.5rem;
+	width: 35rem;
+}
+
+.cards-button{
+	background: none;
+	font-family: var(--poppins);
+	border: none;
+	cursor: pointer;
+}
+
+.cards-button-text{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	color: var(--light-grey);
+	font-weight: 600;
+}
+
+.cards-button-text:hover{
+	color: var(--light-blue);
+	transition-duration: 0.3s;
+	gap: 1rem;
+}
+
+.cards-button-text:not(:hover) {
+	transition-duration: 0.3s;
+	gap: 0.5rem;
+}
+
+.cards-text{
+	color: var(--grey) !important;
+}
+
+
+.cards-query{
+	font-family: var(--poppins);
+	background: none;
+	border-top: 0.125rem solid var(--grey);
+	border-left: none;
+	border-bottom: none;
+	border-right: none;
+	padding: 2rem 10rem;
+	width: 100%;
+	cursor: pointer;
+
+}
+
+.cards-query-text{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 600;
+	width: 100%;
+}
+
+.cards-query-content{
+	margin: 0 5rem;
+	align-items: center;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+}
+
+.cards-query-button-content{
+	background: none;
+	border: none;
+	font-family: var(--poppins);
+	color: var(--light-blue);
+	margin-bottom: 1rem;
+}
+
+.cards-query-button-content:hover{
+	border: 0.125rem solid var(--light-blue);
+	border-radius: 1rem;
+}
+
+
+@media only screen and  (max-width: 590px) {
+	.cards-query{
+		padding: 2rem 5rem;
+
+	}
+}
+@media only screen and  (max-width: 420px) {
+	.cards-query-text{
+		font-size: 1rem;
+	}
+
+}

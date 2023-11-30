@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+	/* Fonts */
+	--poppins: "Poppins", sans-serif;
+
+	/* Colors */
+	--black-0: #000;
+	--grey: #6d6d6d;
+	--light-grey: #b2b2b2;
+	--white-255: #fff;
+
+	--blue: #1E3B8D;
+	--light-blue: #185EF6;
+	--white-blue: #e3efff;
+
+	/* Values */
+	--maxzindex: 16777271; /* Compatible with even old Safaris (0-2)*/
+
+	--small-5: .5rem;
+	--medium-1: 1rem;
+	--big-2: 2rem;
+}
+
+.grey{color: var(--grey) !important}
+.light-blue{color: var(--light-blue) !important}
+.light-grey{color: var(--light-grey) !important}
+.white{color: var(--white-255)}
+.black{color: var(--black-0)}
+
+.bg-white-blue{background: var(--white-blue);}
+.bg-light-blue{background: var(--light-blue);}
+.bg-blue{background: var(--blue);}
+
+
+.center-text {text-align: center}
+
+.tiny-x       {font-size: .725rem}
+.tiny       {font-size: .825rem}
+.small      {font-size: .925rem}
+.medium     {font-size: 1rem}
+.big        {font-size: 1.125rem}
+.big-x      {font-size: 1.25rem}
+.big-xx     {font-size: 1.5rem}
+.big-xxx    {font-size: 1.75rem}
+
+.pointer {cursor: pointer}
+
+.grid {display: grid}
+.grid-columns {
+	display: grid;
+	grid-auto-flow: column;
+}
+
+.grid.fill-normal  {grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr))}
+
+.grid.fit-normal {grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr))}
+.grid.fit-large  {grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr))}
+
+.grid.medium-gap,
+.grid-columns.medium-gap {grid-gap: var(--medium-1)}
+
+.grid.large-gap,
+.grid-columns.large-gap {grid-gap: var(--big-2)}
+
+.grid.center-items,
+.grid-columns.center-items {
+	align-items: center;
+	justify-items: center;
+}
+
+.medium-margin-bottom{margin-bottom: 3rem}
+.medium-margin-top{margin-top: 3rem}
+.none-margin-bottom{margin-bottom: 0rem !important}
+
+.large-margin-top{margin-top: 4rem}
+.none-margin-top{margin-top: 0rem !important}
+
+.medium-margin-left{margin-left: 4.5rem}
+
+.medium-padding{padding: 1rem 2rem}
+.medium-margin{margin: 1rem 0}
+
+
+
+
